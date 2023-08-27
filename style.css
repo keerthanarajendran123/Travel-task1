@@ -1,0 +1,593 @@
+/* background: #4B40C5; blue */
+/* background: #EC682C;  orange */
+:root{
+    --blue-color:#4B40C5;
+    --orange-color:#EC682C; 
+}
+*,
+*::after,
+*::before{
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    display:flex;
+    align-content:flex-start;
+}
+.wrapper{
+    max-width:100vw; 
+    margin:0;
+    align-content: flex-start;
+    position: relative;
+} 
+.btn{
+display:inline-block;
+padding: 8px 20px;
+border-radius: 8px;
+text-decoration: none;
+font-size: 22.612px;
+font-weight:100;
+color:#fff;
+position: relative;
+}
+.btn.login{
+    background:var(--orange-color);
+}
+.btn.signup{
+    background:var(--orange-color);
+}
+.btn.findout{
+    color:#fff;
+    background:var(--blue-color);  
+    bottom: 270px; 
+    left: 20px; 
+}
+.logo{
+    font-family: 'Peralta', cursive;
+    font-weight:900;
+    font-size:40px;
+    color:#000;
+}
+ul{
+    display:flex;
+    align-items:center;
+    gap:65px;
+    list-style:none;
+    margin:0;
+}
+ul,li,a,nav{
+    font-weight:bold;
+    font-size:22.612px;
+    color:#000;
+    text-decoration:none;
+}
+h1{
+       color: #4B40C5;   
+       position: absolute;
+       top: 270px;
+       left: 20px;
+}
+h3{
+    color: #fff;
+    font-weight:bold;
+    position: absolute;
+    top: 315px;
+    left: 20px;
+}
+header
+{
+    height: 100vh;
+    width:100vw;
+}
+nav{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    top: 20px;
+    padding:36px,0;
+    position:fixed; 
+    z-index:fixed;
+    left: 15px;
+}
+.image1{
+    width: 100vw;
+    height: 100vh;
+}
+h2{
+    font-family: 'poppins',sans-serif;
+    color: #4B40C5;
+    text-align: center;
+    line-height : 48px;
+    font-size:32px;
+}
+.offer{
+    color:#14183E;
+    font-size:64px;
+    line-height :96px;
+    text-align: center;
+}
+.cals{
+    font-size: 24px;
+    line-height: 36px;
+    color: #000;
+    position: absolute;
+    left:25px;
+}
+.content1{
+    font-family: 'poppins',sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000;
+    position:absolute;
+    text-align: center;
+    left:25px;
+    width: 200px;
+    height:10px;
+    bottom:27%;
+}
+.content2{
+    font-family: 'poppins',sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000;
+    position: absolute;
+    text-align: center;
+    left: 470px;
+    width: 200px;
+    height:15px;
+    padding-top: 30px;
+}
+.antenna-rect{
+    position:relative;
+    bottom:5px;
+}
+.container{
+    display:flex;
+    margin-left: 10px;
+    min-width: 100%;
+    flex-wrap: wrap;
+}
+.flights{
+        font-size: 24px;
+        line-height: 0px;
+        color: #000;
+        position: absolute;
+        left: 500px;
+        width: 200px;       
+}
+.plane{
+    position:absolute;
+    top:50%;
+    transform:translateY(-110%);
+    left:80%;
+    z-index:fixed;
+}
+.plane-rect{
+    position:absolute;
+    bottom:90%;
+    left:90%;
+}
+.light{
+    position:relative;
+    left:55%;
+    bottom:10%;
+}
+.card{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    bottom:20px;
+    right:200px;
+}
+.card-text{
+    position: absolute;
+    top: 20%;
+    padding: 10px;
+}
+.card2{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    bottom:80px;
+    right:70px;
+}
+.card2-text{
+    position: absolute;
+    top: 20%;
+    padding: 10px;
+}
+.card3{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    bottom:20px;
+}
+.card3-rome{
+    position: absolute;
+    top: 20%;
+    padding: 10px;
+}
+.events{
+    font-size: 24px;
+    line-height: 0px;
+    top:50px;
+    color: #000;
+    position: absolute;
+    left: 200px;
+    width: 200px;       
+}
+.content3{
+    font-family: 'poppins',sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000;
+    position: absolute;
+    text-align: center;
+    left:180px;
+    width: 170px;
+    height:15px;
+    padding-top:80px;
+}
+.mic-icon{
+    position:absolute;
+    bottom:60%;
+    transform:translateY(-110%);
+    left:40%;
+}
+.mic-rect{
+    position:absolute;
+    bottom:85%;
+    left:45%;
+}
+.customer{
+    font-size: 24px;
+    line-height: 36px;
+    color: #000;
+    position: absolute;
+    right:90px;
+    bottom:28%;
+}
+.content4{
+    font-family: 'poppins',sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000;
+    position:absolute;
+    text-align: center;
+    right:75px;
+    width: 200px;
+    height:10px;
+    bottom:27%;
+}
+.settings-icon{
+    position: absolute;
+    right:10%;
+}
+.settings-rect{
+    position: absolute;
+    bottom:33%;
+    left:82%;
+}
+.italy{
+    position: relative;
+    top:123px;
+    background:#fff;
+    padding:28px 87px 50px 17px;
+    width: 418.988px;
+    height: 172.916px;
+    border-radius: 0px 0px 30px 30px;
+    margin:8px -98px 0px 0px;
+ }
+ .uk{
+    position: relative;
+    top:123px;
+    left: 20px;
+    background:#fff;
+    padding:28px 75px 50px 57px;
+    width: 418.988px;
+    height: 172.916px;
+    border-radius: 0px 0px 30px 30px;
+    margin:8px -81px 0px 5px;
+ }
+ .europe{
+    position: relative;
+    top:123px;
+    left: 20px;
+    background:#fff;
+    padding:28px 75px 50px 57px;
+    width: 418.988px;
+    height: 172.916px;
+    border-radius: 0px 0px 30px 30px;
+    /* border:300px; */
+    margin:8px -98px 0px 0px;
+ }
+.rome-img{
+    width: 422.66px;
+    height:607.87px;
+    left:21px;
+}
+.line1{
+    position: relative;
+    bottom:10px;
+    left:18%;
+    padding-top:12px;;
+   
+}
+.line2{
+    position: relative;
+    bottom:10px;
+    left:35%;
+    padding-top:12px;;
+   
+} 
+.arrow1{
+    position:absolute;
+    top:40%;
+    left:5%;
+}
+.arrow2{
+    position:absolute;
+    top:40%;
+    left:13%;  
+} 
+.sell{
+    font-family: 'poppins',sans-serif;
+    color: #4B40C5;
+    text-align: center;
+    position: relative;
+    bottom: 250px;
+    font-size:32px;
+}
+.destination{
+    color:#14183E;
+    font-size:50px;
+    text-align: center;
+    position: relative;
+    bottom: 280px;
+}
+.container1{
+    display: flex;
+    justify-content:space-evenly;
+    flex-grow:1;
+    position:relative;
+    bottom:280px;
+    flex-wrap: wrap;
+}
+.amount{
+    position: absolute;
+    bottom:55px;
+    left:70%
+}
+.amount1{
+    position: absolute;
+    bottom:55px;
+    left:80%
+}
+.page4{
+    position: relative;
+    bottom:400px;
+    left:30px;
+    color:#5E6282;
+    font-size: x-large;
+}
+.trip{
+    font-family: 'poppins',sans-serif;
+    font-size: 50px;
+    line-height: 60px;
+    color: #000;
+    position: relative;
+    left: 25px;
+    width: 500px;
+    bottom: 65vh;
+}
+.container3{
+   position: relative;
+   bottom:450px;
+   width:400px;
+   left: 25px;  
+   line-height:20px;
+   /* margin-bottom:30px;
+   padding:40px; */
+}
+.title{
+    font-family: 'poppins',sans-serif;
+    font-size:25px;
+    font-weight:500;
+    position: relative;
+    bottom:80px;
+    left:70px;
+    color: #14183E;
+}
+.para{
+    color: #5E6282;
+    font-size:15px;
+    line-height: 20px;
+    position: relative;
+    bottom:90px;
+    left:70px;
+}
+.girl-image{
+  position: relative;
+  bottom:900px;
+  left:150%;
+}
+.yellow-rect{
+    height: 20vh;
+}
+.choose{
+    font-size: 30px;
+    position: relative;
+    bottom: 220vh;
+    left: 43%;
+}
+.choose-para{
+    font-size: 19px;
+    position: relative;
+    bottom: 220vh;
+    left: 60vh;
+    line-height:25px;
+    font-family: 'poppins',sans-serif;
+    color: #2C2D32;
+    width: 650px;
+    height:10px;
+    text-align: center;
+}
+.container4{
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 90px;
+    /* gap:80px; */
+}
+.content-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position:relative;
+    bottom:1300px;
+    gap:10px;
+}
+.content-section .card4{    
+    margin:0px -20px 20px -20px;
+}
+.content-section .card img{
+    width: 10%;
+    margin-left: 10px;
+}
+.head{
+        margin: 15px 0px;
+        font-size:30px;
+        font-family:'poppins',sans-serif;
+        color:#000;
+        font-weight: 400;
+        position: relative;
+        bottom:350px;
+}
+.subpara{
+    font-size:15px;
+    width: 250px;
+    font-family: 'poppins'sans-serif;
+    line-height :30px;
+    left:90px;
+    position: relative;
+  bottom:330px;
+}
+.container-img{
+    display: flex;
+    justify-content:space-around;
+    position:relative;
+    bottom:320vh;
+}
+.white-icons{
+    position: absolute;
+    top:40px;  
+}
+.star{
+    position:absolute;
+    right:460px;
+}
+.thumb{
+    position:absolute;
+    left:460px;
+}
+.subscribe-img{
+    position:relative;
+     bottom:1600px;
+     width:70%;
+}
+.content-subscribe{
+    position: absolute;
+    top:20%;
+    font-size: 30px;
+    font-family: 'poppins',sans-serif;
+    color:#5E6282;
+    width:90%;
+    text-align: center;
+    line-height: 70px;
+    left:20%;  
+}
+.email-btn{
+    position: absolute;
+    top:65%;
+    left:20%;
+}
+.subscribe-btn{
+    position:absolute;
+    top:65%;
+    left:75%;
+
+}
+.telegram-icon{
+    position: absolute;
+    bottom:85%;
+    left:135%;
+}
+.fpara{
+    position: absolute;
+    top:700%;
+    left:20px;
+    width: 300px;
+}
+.company{
+    position: absolute;
+    top:670%;
+    left:30%;
+}
+.fcontent {
+    display: flex;
+    gap: 80px;
+    position: relative;
+    right:10%;
+    line-height:45px;
+}
+h6{
+    position: relative;
+    bottom:40px;
+    font-size:30px;
+}
+ol{
+    list-style: none;
+}
+li{
+    font-size:20px;
+    color:#5E6282;
+}
+.heading{
+     position: relative;
+     top:40px;
+}
+.apps{
+    font-size:20px;
+    color:#5E6282;
+    position: relative;
+    left:100%;
+    bottom:120px;
+}
+.socialapp{
+    position: relative;
+    left:100%;
+    bottom:130px;
+    width:30vw;
+}
+.app-icons{
+    position:relative;
+    bottom:50vh;
+    left:100%;
+    margin:0px 40px 0px 0px;
+}
+.insta-bg{
+    position:absolute;
+    top:5px;
+    left:15%;
+}
+.copyright{
+    position: relative;
+    bottom:140px;
+    left:25%;
+    color: #5E6282;
+    font-size:large;
+}
