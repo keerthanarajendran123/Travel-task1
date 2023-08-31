@@ -83,10 +83,9 @@ nav{
     display:flex;
     justify-content:space-around;
     align-items:center;
-    top: 20px;
+    top: 30px;
     padding:36px,0;
-    position:fixed; 
-    z-index:fixed;
+    position:absolute; 
     left: 15px;
 }
 .image1{
@@ -292,9 +291,9 @@ h2{
     margin:8px -98px 0px 0px;
  }
 .rome-img{
-    width: 422.66px;
-    height:607.87px;
-    left:21px;
+    width: 422px;
+    height:607px;
+    
 }
 .line1{
     position: relative;
@@ -338,10 +337,11 @@ h2{
 .container1{
     display: flex;
     justify-content:space-evenly;
-    flex-grow:1;
+    flex:1;
     position:relative;
     bottom:280px;
-    flex-wrap: wrap;
+    gap:10px;
+   
 }
 .amount{
     position: absolute;
