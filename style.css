@@ -122,7 +122,8 @@ h2{
     left:25px;
     width: 200px;
     height:10px;
-    bottom:27%;
+    bottom:26%;
+    
 }
 .content2{
     font-family: 'poppins',sans-serif;
@@ -131,10 +132,10 @@ h2{
     color: #000;
     position: absolute;
     text-align: center;
-    left: 470px;
+    left: 460px;
     width: 200px;
     height:15px;
-    padding-top: 30px;
+    padding-top: 35px;
 }
 .antenna{
     position:relative;
@@ -152,7 +153,7 @@ h2{
         line-height: 0px;
         color: #000;
         position: absolute;
-        left: 500px;
+        left: 490px;
         width: 200px;       
 }
 .plane{
@@ -191,7 +192,7 @@ h2{
     right:70px;
 }
 .card2-text{
-    position: absolute;
+    position: relative;
     top: 20%;
     padding: 10px;
 }
@@ -212,7 +213,7 @@ h2{
     top:50px;
     color: #000;
     position: absolute;
-    left: 200px;
+    left: 210px;
     width: 200px;       
 }
 .content3{
@@ -222,7 +223,7 @@ h2{
     color: #000;
     position: absolute;
     text-align: center;
-    left:180px;
+    left:200px;
     width: 170px;
     height:15px;
     padding-top:80px;
@@ -230,8 +231,13 @@ h2{
 
 .setting-mic{
     position:absolute;
-    bottom:75%;
-    left:235px;
+    bottom:10%;
+    left:240px;
+}
+.light-mic{
+    position:absolute;
+    left:30px;
+    bottom:7px;
 }
 .customer{
     font-size: 24px;
@@ -427,7 +433,6 @@ h2{
     justify-content: center;
     align-items: center;
     padding: 0px 90px;
-    /* gap:80px; */
 }
 .content-section{
     display: flex;
@@ -486,6 +491,10 @@ h2{
      bottom:1600px;
      width:70%;
 }
+#bg-grey{
+    position: relative;
+    left:70px;
+}
 .content-subscribe{
     position: absolute;
     top:20%;
@@ -511,7 +520,7 @@ h2{
 .telegram-icon{
     position: absolute;
     bottom:85%;
-    left:135%;
+    left:130%;
 }
 .fpara{
     position: absolute;
@@ -551,25 +560,20 @@ li{
     font-size:20px;
     color:#5E6282;
     position: relative;
-    left:100%;
+    left:96%;
     bottom:120px;
 }
 .socialapp{
     position: relative;
-    left:100%;
+    left:96%;
     bottom:130px;
     width:30vw;
 }
 .app-icons{
     position:relative;
     bottom:50vh;
-    left:100%;
+    left:93%;
     margin:0px 40px 0px 0px;
-}
-.insta-bg{
-    position:absolute;
-    top:5px;
-    left:15%;
 }
 .copyright{
     position: relative;
