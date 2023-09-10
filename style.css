@@ -1,651 +1,859 @@
-:root{
-    --blue-color:#4B40C5;
-    --orange-color:#EC682C; 
+:root {
+  --blue-color: #4b40c5;
+  --orange-color: #ec682c;
 }
 *,
 *::after,
-*::before{
-    box-sizing:border-box;
+*::before {
+  box-sizing: border-box;
 }
-body{
-    margin:0;
-    font-family: 'Poppins', sans-serif;
-    display:flex;
-    align-content:flex-start;
-    overflow-x: hidden;
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-content: flex-start;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100vh;
 }
-.wrapper{
-    max-width:100vw; 
-    margin:0;
-    align-content: flex-start;
-    position: relative;
-} 
-.btn{
-display:inline-block;
-padding: 8px 20px;
-border-radius: 8px;
-text-decoration: none;
-font-size: 22.612px;
-font-weight:100;
-color:#fff;
-position: relative;
-}
-.btn.login{
-    background:var(--orange-color);
-}
-.btn.signup{
-    background:var(--orange-color);
-}
-.btn.findout{
-    color:#fff;
-    background:var(--blue-color);  
-    bottom: 270px; 
-    left: 20px; 
-}
-.logo{
-    font-family: 'Peralta', cursive;
-    font-weight:900;
-    font-size:40px;
-    color:#000;
-}
-ul{
-    display:flex;
-    align-items:center;
-    gap:65px;
-    list-style:none;
-    margin:0;
-}
-ul,li,a,nav{
-    font-weight:bold;
-    font-size:22.612px;
-    color:#000;
-    text-decoration:none;
-}
-h1{
-       color: #4B40C5;   
-       position: absolute;
-       top: 270px;
-       left: 20px;
-}
-h3{
-    color: #fff;
-    font-weight:bold;
-    position: absolute;
-    top: 315px;
-    left: 20px;
-}
-header
-{
-    height: 100vh;
-    width:100%;
-}
-nav{
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
-    top: 30px;
-    padding:36px,0;
-    position:absolute; 
-    left: 15px;
-}
-.image1{
-    width: 100vw;
-    height: 100vh;
-}
-h2{
-    font-family: 'poppins',sans-serif;
-    color: #4B40C5;
-    text-align: center;
-    line-height : 48px;
-    font-size:32px;
-}
-.offer{
-    color:#14183E;
-    font-size:64px;
-    line-height :96px;
-    text-align: center;
-}
-.cals{
-    font-size: 24px;
-    line-height: 36px;
-    color: #000;
-    position: absolute;
-    left:25px;
-}
-.content1{
-    font-family: 'poppins',sans-serif;
-    font-size: 18px;
-    line-height: 30px;
-    color: #000;
-    position:absolute;
-    text-align: center;
-    left:25px;
-    width: 200px;
-    height:10px;
-    bottom:26%;
-    
-}
-.content2{
-    font-family: 'poppins',sans-serif;
-    font-size: 18px;
-    line-height: 30px;
-    color: #000;
-    position: absolute;
-    text-align: center;
-    left: 460px;
-    width: 200px;
-    height:15px;
-    padding-top: 35px;
-}
-.antenna{
-    position:relative;
-    bottom:5px;
-    left:70px;
-}
-.container{
-    display:flex;
-    margin-left: 10px;
-    min-width: 100%;
-    flex-wrap: wrap;
-}
-.flights{
-        font-size: 24px;
-        line-height: 0px;
-        color: #000;
-        position: absolute;
-        left: 490px;
-        width: 200px;       
-}
-.plane{
-    position:absolute;
-    bottom:57%;
-    left:95%;
-    z-index:fixed;
-}
-.plane-rect{
-    position:absolute;
-    bottom:89%;
-    left:100%;
-}
-.light{
-    position:relative;
-    left:55%;
-    bottom:10%;
-}
-.card{
-    max-width: 100%;
-    height: auto;
-    position: relative;
-    bottom:20px;
-    right:200px;
-}
-.card-text{
-    position: absolute;
-    top: 20%;
-    padding: 10px;
-}
-.card2{
-    max-width: 100%;
-    height: auto;
-    position: relative;
-    bottom:80px;
-    right:70px;
-}
-.card2-text{
-    position: relative;
-    top: 20%;
-    padding: 10px;
-}
-.card3{
-    max-width: 100%;
-    height: auto;
-    position: relative;
-    bottom:20px;
-}
-.card3-rome{
-    position: absolute;
-    top: 20%;
-    padding: 10px;
-}
-.events{
-    font-size: 24px;
-    line-height: 0px;
-    top:50px;
-    color: #000;
-    position: absolute;
-    left: 210px;
-    width: 200px;       
-}
-.content3{
-    font-family: 'poppins',sans-serif;
-    font-size: 18px;
-    line-height: 30px;
-    color: #000;
-    position: absolute;
-    text-align: center;
-    left:200px;
-    width: 170px;
-    height:15px;
-    padding-top:80px;
-}
-
-.setting-mic{
-    position:absolute;
-    bottom:10%;
-    left:240px;
-}
-.light-mic{
-    position:absolute;
-    left:30px;
-    bottom:7px;
-}
-.customer{
-    font-size: 24px;
-    line-height: 36px;
-    color: #000;
-    position: absolute;
-    right:90px;
-    bottom:28%;
-}
-.content4{
-    font-family: 'poppins',sans-serif;
-    font-size: 18px;
-    line-height: 30px;
-    color: #000;
-    position:absolute;
-    text-align: center;
-    right:75px;
-    width: 200px;
-    height:10px;
-    bottom:27%;
-}
-.setting{
-    position: absolute;
-    right:140px;
-    bottom:35%;
-}
-.italy{
-    position: relative;
-    top:123px;
-    background:#fff;
-    padding:28px 87px 50px 17px;
-    width: 418.988px;
-    height: 172.916px;
-    border-radius: 0px 0px 30px 30px;
-    margin:8px -98px 0px 0px;
- }
- .uk{
-    position: relative;
-    top:123px;
-    left: 20px;
-    background:#fff;
-    padding:28px 75px 50px 57px;
-    width: 418.988px;
-    height: 172.916px;
-    border-radius: 0px 0px 30px 30px;
-    margin:8px -81px 0px 5px;
- }
- .europe{
-    position: relative;
-    top:123px;
-    left: 20px;
-    background:#fff;
-    padding:28px 75px 50px 57px;
-    width: 418.988px;
-    height: 172.916px;
-    border-radius: 0px 0px 30px 30px;
-    margin:8px -98px 0px 0px;
- }
-.rome-img{
-    width: 422px;
-    height:607px;
-    
-}
-.line1{
-    position: relative;
-    bottom:10px;
-    left:18%;
-    padding-top:12px;;
-   
-}
-.line2{
-    position: relative;
-    bottom:10px;
-    left:35%;
-    padding-top:12px;;
-   
-} 
-.arrow1{
-    position:absolute;
-    top:40%;
-    left:5%;
-}
-.arrow2{
-    position:absolute;
-    top:40%;
-    left:13%;  
-} 
-.sell{
-    font-family: 'poppins',sans-serif;
-    color: #4B40C5;
-    text-align: center;
-    position: relative;
-    bottom: 250px;
-    font-size:32px;
-}
-.destination{
-    color:#14183E;
-    font-size:50px;
-    text-align: center;
-    position: relative;
-    bottom: 280px;
-}
-.container1{
-    display: flex;
-    justify-content:space-evenly;
-    flex:1;
-    position:relative;
-    bottom:280px;
-    gap:10px;
-   
-}
-.amount{
-    position: absolute;
-    bottom:55px;
-    left:70%
-}
-.amount1{
-    position: absolute;
-    bottom:55px;
-    left:80%
-}
-.page4{
-    position: relative;
-    bottom:400px;
-    left:30px;
-    color:#5E6282;
-    font-size: x-large;
-}
-.trip{
-    font-family: 'poppins',sans-serif;
-    font-size: 50px;
-    line-height: 60px;
-    color: #000;
-    position: relative;
-    left: 25px;
-    width: 500px;
-    bottom: 65vh;
-}
-.container3{
-   position: relative;
-   bottom:450px;
-   width:400px;
-   left: 25px;  
-   line-height:20px;
-}
-.title{
-    font-family: 'poppins',sans-serif;
-    font-size:25px;
-    font-weight:500;
-    position: relative;
-    bottom:80px;
-    left:70px;
-    color: #14183E;
-}
-.para{
-    color: #5E6282;
-    font-size:15px;
-    line-height: 20px;
-    position: relative;
-    bottom:90px;
-    left:70px;
-}
-.girl-image{
+.wrapper {
+  max-width: 100vw;
+  margin: 0;
+  align-content: flex-start;
   position: relative;
-  bottom:900px;
-  left:150%;
 }
-.yellow-rect{
-    height: 20vh;
+.btn {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 22.612px;
+  font-weight: 100;
+  color: #fff;
+  position: relative;
 }
-.choose{
-    font-size: 30px;
-    position: relative;
-    bottom: 220vh;
-    left: 43%;
+.btn.login {
+  background: var(--orange-color);
 }
-.choose-para{
-    font-size: 19px;
-    position: relative;
-    bottom: 220vh;
-    left: 60vh;
-    line-height:25px;
-    font-family: 'poppins',sans-serif;
-    color: #2C2D32;
-    width: 650px;
-    height:10px;
-    text-align: center;
+.btn.signup {
+  background: var(--orange-color);
 }
-.container4{
-    width:100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 90px;
+.btn.findout {
+  color: #fff;
+  background: var(--blue-color);
+  bottom: 270px;
+  left: 20px;
 }
-.content-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position:relative;
-    bottom:1300px;
-    gap:10px;
+.logo {
+  font-family: "Peralta", cursive;
+  font-weight: 900;
+  font-size: 40px;
+  color: #000;
 }
-.content-section .card4{    
-    margin:0px -20px 20px -20px;
+ul {
+  display: flex;
+  align-items: center;
+  gap: 65px;
+  list-style: none;
+  margin: 0;
 }
-.content-section .card img{
-    width: 10%;
-    margin-left: 10px;
+ul,
+li,
+a,
+nav {
+  font-weight: bold;
+  font-size: 22.612px;
+  color: #000;
+  text-decoration: none;
 }
-.head{
-        margin: 15px 0px;
-        font-size:30px;
-        font-family:'poppins',sans-serif;
-        color:#000;
-        font-weight: 400;
-        position: relative;
-        bottom:350px;
+h1 {
+  color: #4b40c5;
+  position: absolute;
+  top: 270px;
+  left: 20px;
 }
-.subpara{
-    font-size:15px;
-    width: 250px;
-    font-family: 'poppins'sans-serif;
-    line-height :30px;
-    left:90px;
-    position: relative;
-  bottom:330px;
+h3 {
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  top: 315px;
+  left: 20px;
 }
-.container-img{
-    display: flex;
-    justify-content:space-around;
-    position:relative;
-    bottom:320vh;
+header {
+  height: 100%;
+  width: 100%;
 }
-.white-icons{
-    position: absolute;
-    top:40px;  
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 30px;
+  padding: 36px, 0;
+  position: absolute;
+  left: 15px;
 }
-.star{
-    position:absolute;
-    right:460px;
+.image1 {
+  width: 100vw;
+  height: 100vh;
 }
-.thumb{
-    position:absolute;
-    left:460px;
+h2 {
+  font-family: "poppins", sans-serif;
+  color: #4b40c5;
+  text-align: center;
+  font-size: 32px;
 }
-.subscribe-img{
-    position:relative;
-     bottom:1600px;
-     width:70%;
+.offer {
+  color: #14183e;
+  font-size: 64px;
+  line-height: 96px;
+  text-align: center;
 }
-#bg-grey{
-    position: relative;
-    left:70px;
+.cals {
+  font-size: 24px;
+  line-height: 36px;
+  color: #000;
+  position: absolute;
+  left: 25px;
 }
-.content-subscribe{
-    position: absolute;
-    top:20%;
-    font-size: 30px;
-    font-family: 'poppins',sans-serif;
-    color:#5E6282;
-    width:90%;
-    text-align: center;
-    line-height: 70px;
-    left:20%;  
+.content1 {
+  font-family: "poppins", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000;
+  position: absolute;
+  text-align: center;
+  left: 25px;
+  width: 200px;
+  height: 10px;
+  bottom: 26%;
 }
-.email-btn{
-    position: absolute;
-    top:65%;
-    left:20%;
+.content2 {
+  font-family: "poppins", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000;
+  position: absolute;
+  text-align: center;
+  left: 460px;
+  width: 200px;
+  height: 15px;
+  padding-top: 35px;
 }
-.subscribe-btn{
-    position:absolute;
-    top:65%;
-    left:75%;
+.antenna {
+  position: relative;
+  bottom: 5px;
+  left: 70px;
+}
+.container {
+  display: flex;
+  margin-left: 10px;
+  min-width: 100%;
+  flex-wrap: wrap;
+}
+.flights {
+  font-size: 24px;
+  line-height: 0px;
+  color: #000;
+  position: absolute;
+  left: 490px;
+  width: 200px;
+}
+.plane {
+  position: absolute;
+  bottom: 57%;
+  left: 95%;
+  z-index: fixed;
+}
+.plane-rect {
+  position: absolute;
+  bottom: 89%;
+  left: 100%;
+}
+.light {
+  position: relative;
+  left: 55%;
+  bottom: 10%;
+}
+.card {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 20px;
+  right: 200px;
+}
+.card-text {
+  position: absolute;
+  top: 20%;
+  padding: 10px;
+}
+.card2 {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 80px;
+  right: 70px;
+}
+.card2-text {
+  position: relative;
+  top: 20%;
+  padding: 10px;
+}
+.card3 {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 20px;
+}
+.card3-rome {
+  position: absolute;
+  top: 20%;
+  padding: 10px;
+}
+.events {
+  font-size: 24px;
+  top: 50px;
+  color: #000;
+  position: absolute;
+  left: 210px;
+  width: 200px;
+  line-height: 10px;
+}
+.content3 {
+  font-family: "poppins", sans-serif;
+  font-size: 18px;
+  color: #000;
+  position: absolute;
+  text-align: center;
+  left: 200px;
+  width: 170px;
+  height: 15px;
+  padding-top: 80px;
+}
 
+.setting-mic {
+  position: absolute;
+  bottom: 10%;
+  left: 240px;
 }
-.telegram-icon{
-    position: absolute;
-    bottom:85%;
-    left:130%;
+.light-mic {
+  position: absolute;
+  left: 30px;
+  bottom: 7px;
 }
-.fpara{
-    position: absolute;
-    top:700%;
-    left:20px;
-    width: 300px;
+.customer {
+  font-size: 24px;
+  line-height: 36px;
+  color: #000;
+  position: absolute;
+  right: 90px;
+  bottom: 28%;
 }
-.company{
-    position: absolute;
-    top:670%;
-    left:30%;
+.content4 {
+  font-family: "poppins", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000;
+  position: absolute;
+  text-align: center;
+  right: 75px;
+  width: 200px;
+  height: 10px;
+  bottom: 27%;
+}
+.setting {
+  position: absolute;
+  right: 140px;
+  bottom: 35%;
+}
+.italy {
+  position: relative;
+  top: 123px;
+  background: #fff;
+  padding: 28px 87px 50px 17px;
+  width: 418.988px;
+  height: 172.916px;
+  border-radius: 0px 0px 30px 30px;
+  margin: 8px -98px 0px 0px;
+}
+.uk {
+  position: relative;
+  top: 123px;
+  left: 20px;
+  background: #fff;
+  padding: 28px 75px 50px 57px;
+  width: 418.988px;
+  height: 172.916px;
+  border-radius: 0px 0px 30px 30px;
+  margin: 8px -81px 0px 5px;
+}
+.europe {
+  position: relative;
+  top: 123px;
+  left: 20px;
+  background: #fff;
+  padding: 28px 75px 50px 57px;
+  width: 418.988px;
+  height: 172.916px;
+  border-radius: 0px 0px 30px 30px;
+  margin: 8px -98px 0px 0px;
+}
+.rome-img {
+  width: 422px;
+  height: 607px;
+}
+.line1 {
+  position: relative;
+  bottom: 10px;
+  left: 18%;
+  padding-top: 12px;
+}
+.line2 {
+  position: relative;
+  bottom: 10px;
+  left: 35%;
+  padding-top: 12px;
+}
+.arrow1 {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+.arrow2 {
+  position: absolute;
+  top: 40%;
+  left: 13%;
+}
+.sell {
+  font-family: "poppins", sans-serif;
+  color: #4b40c5;
+  text-align: center;
+  position: relative;
+  bottom: 250px;
+  font-size: 32px;
+}
+.destination {
+  color: #14183e;
+  font-size: 50px;
+  text-align: center;
+  position: relative;
+  bottom: 280px;
+}
+.container1 {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+  position: relative;
+  bottom: 280px;
+  gap: 10px;
+}
+.amount {
+  position: absolute;
+  bottom: 55px;
+  left: 70%;
+}
+.amount1 {
+  position: absolute;
+  bottom: 55px;
+  left: 80%;
+}
+.page4 {
+  position: relative;
+  bottom: 400px;
+  left: 30px;
+  color: #5e6282;
+  font-size: x-large;
+}
+.trip {
+  font-family: "poppins", sans-serif;
+  font-size: 50px;
+  line-height: 60px;
+  color: #000;
+  position: relative;
+  left: 25px;
+  width: 500px;
+  bottom: 65vh;
+}
+.container3 {
+  position: relative;
+  bottom: 450px;
+  width: 400px;
+  left: 25px;
+  line-height: 20px;
+}
+.title {
+  font-family: "poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  bottom: 80px;
+  left: 70px;
+  color: #14183e;
+}
+.para {
+  color: #5e6282;
+  font-size: 15px;
+  line-height: 20px;
+  position: relative;
+  bottom: 90px;
+  left: 70px;
+}
+.girl-image {
+  position: relative;
+  bottom: 900px;
+  left: 150%;
+}
+.yellow-rect {
+  height: 20vh;
+}
+.choose {
+  font-size: 30px;
+  position: relative;
+  bottom: 220vh;
+  left: 43%;
+}
+.choose-para {
+  font-size: 19px;
+  position: relative;
+  bottom: 220vh;
+  left: 60vh;
+  line-height: 25px;
+  font-family: "poppins", sans-serif;
+  color: #2c2d32;
+  width: 650px;
+  height: 10px;
+  text-align: center;
+}
+.container4 {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 90px;
+}
+.content-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  bottom: 1300px;
+  gap: 10px;
+}
+.content-section .card4 {
+  margin: 0px -20px 20px -20px;
+}
+.content-section .card img {
+  width: 10%;
+  margin-left: 10px;
+}
+.head {
+  margin: 15px 0px;
+  font-size: 30px;
+  font-family: "poppins", sans-serif;
+  color: #000;
+  font-weight: 400;
+  position: relative;
+  bottom: 350px;
+}
+.subpara {
+  font-size: 15px;
+  width: 250px;
+  font-family: "poppins" sans-serif;
+  line-height: 30px;
+  left: 90px;
+  position: relative;
+  bottom: 330px;
+}
+.container-img {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  bottom: 315vh;
+}
+.white-icons {
+  position: absolute;
+  top: 40px;
+}
+.star {
+  position: absolute;
+  right: 460px;
+}
+.thumb {
+  position: absolute;
+  left: 460px;
+}
+.subscribe-img {
+  position: relative;
+  bottom: 1600px;
+  width: 70%;
+}
+#bg-grey {
+  position: relative;
+  left: 70px;
+}
+.content-subscribe {
+  position: absolute;
+  top: 20%;
+  font-size: 30px;
+  font-family: "poppins", sans-serif;
+  color: #5e6282;
+  width: 90%;
+  text-align: center;
+  line-height: 70px;
+  left: 20%;
+}
+.email-btn {
+  position: absolute;
+  top: 65%;
+  left: 20%;
+}
+.subscribe-btn {
+  position: absolute;
+  top: 65%;
+  left: 75%;
+}
+.telegram-icon {
+  position: absolute;
+  bottom: 85%;
+  left: 130%;
+}
+.fpara {
+  position: absolute;
+  top: 700%;
+  left: 20px;
+  width: 300px;
+}
+.company {
+  position: absolute;
+  top: 670%;
+  left: 30%;
 }
 .fcontent {
+  display: flex;
+  gap: 80px;
+  position: relative;
+  right: 10%;
+  line-height: 45px;
+}
+h6 {
+  position: relative;
+  bottom: 40px;
+  font-size: 30px;
+}
+ol {
+  list-style: none;
+}
+li {
+  font-size: 20px;
+  color: #5e6282;
+}
+.heading {
+  position: relative;
+  top: 40px;
+}
+.apps {
+  font-size: 20px;
+  color: #5e6282;
+  position: relative;
+  left: 96%;
+  bottom: 120px;
+}
+.socialapp {
+  position: relative;
+  left: 96%;
+  bottom: 130px;
+  width: 30vw;
+}
+.app-icons {
+  position: relative;
+  bottom: 50vh;
+  left: 93%;
+  margin: 0px 40px 0px 0px;
+}
+.copyright {
+  position: relative;
+  bottom: 140px;
+  left: 25%;
+  color: #5e6282;
+  font-size: large;
+}
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+    margin: 0;
     display: flex;
-    gap: 80px;
+    align-content: flex-start;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .wrapper {
+    max-width: 100%;
+    padding: 0 10px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  ul {
+    gap: 20px;
+  }
+  ul,
+  li,
+  a,
+  nav {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 23px;
     position: relative;
-    right:10%;
-    line-height:45px;
-}
-h6{
+    top: -290px;
+    left: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+    top: 230px;
+    left: 30px;
+  }
+  .btn.findout {
     position: relative;
-    bottom:40px;
-    font-size:30px;
-}
-ol{
-    list-style: none;
-}
-li{
-    font-size:20px;
-    color:#5E6282;
-}
-.heading{
-     position: relative;
-     top:40px;
-}
-.apps{
-    font-size:20px;
-    color:#5E6282;
-    position: relative;
-    left:96%;
-    bottom:120px;
-}
-.socialapp{
-    position: relative;
-    left:96%;
-    bottom:130px;
-    width:30vw;
-}
-.app-icons{
-    position:relative;
-    bottom:50vh;
-    left:93%;
-    margin:0px 40px 0px 0px;
-}
-.copyright{
-    position: relative;
-    bottom:140px;
-    left:25%;
-    color: #5E6282;
-    font-size:large;
-}
-/* Media Query for 1200px and wider screens
-@media (min-width: 1024px) {
-body {
-        margin:0;
-        font-family: 'Poppins', sans-serif;
-        display:flex;
-        align-content:flex-start;
-        overflow-x: hidden;
-    }
-.btn {
-        display:inline-block;
-        padding: 8px 10px;
-        border-radius: 8px;
-        text-decoration: none;
-        font-size:10px;
-        font-weight:100;
-        color:#fff;
-        position: relative;
-    }
-    .logo{
-        font-size: large;
-        font-family: 'Peralta', cursive;
-        font-weight:900;
-        color:#000;  
-    }
-    .image1{
-        width:610px;
-        height:300px;
-    }
-    ul,li,a,nav{
-        font-weight:bold;
-        font-size:10px;
-        color:#000;
-        text-decoration:none;
-        gap:20px;
-        
-    }
-    h1{
-        color: #4B40C5;   
-        position: absolute;
-        top: 115px;
-        left: 19px;
-        font-size: 18px;
- }
- h3{
-     color: #fff;
-     font-weight:bold;
-     position: absolute;
-     top: 140px;
-     left: 20px;
-     font-size: 14px;
- }
- .btn.findout{
-    color:#fff;
-    background:var(--blue-color);  
-    bottom: 130px; 
-    left: 15px; 
-}
-header{
-    width: auto;
+    bottom: 250px;
+  }
+  .image1 {
+    width: 100%;
     height: auto;
+  }
+  h2 {
+    text-align: center;
+    font-size: 25px;
+  }
+  .offer {
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+  }
+  .antenna {
+    width: 80px;
+  }
+  .cals {
+    font-size: 18px;
+  }
+  .content1 {
+    font-size: 18px;
+    position: relative;
+    top: 50px;
+    left: 0px;
+  }
+  .light {
+    position: relative;
+    left: 10px;
+    bottom: 10%;
+  }
+  .card {
+    width: 30px;
+    height: auto;
+    position: relative;
+    bottom: 20px;
+    right: 30px;
+  }
+  .flights {
+    width: 80px;
+    font-size: 18px;
+  }
+  .rome-img {
+    width: 250px;
+  }
+  .amount {
+    position: relative;
+    bottom: 83px;
+    left: 140px;
+  }
+  .amount1 {
+    position: absolute;
+    bottom: 55px;
+    left: 180px;
+  }
+  .card3-rome {
+    position: absolute;
+    top: 21%;
+    left: -10px;
+  }
+  .trip {
+    font-size: 20px;
+    position: relative;
+    left: 25px;
+    bottom: 430px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .para {
+    font-size: 15px;
+  }
+  .girl-image {
+    position: relative;
+    bottom: 700px;
+    left: 80%;
+  }
+  .container3 {
+    position: relative;
+    bottom: 380px;
+    width: 220px;
+    left: 20px;
+  }
+  .choose {
+    position: relative;
+    left: 250px;
+  }
+  .choose-para {
+    font-size: 18px;
+    position: relative;
+    bottom: 220vh;
+    left: 15vh;
+    width: 650px;
+    height: 10px;
+  }
+  #bg-grey {
+    position: relative;
+    left: 10px;
+    width: 800px;
+  }
+  .content-subscribe {
+    position: absolute;
+    top: 20%;
+    font-size: 20px;
+    width: 90%;
+    text-align: center;
+    left: 20%;
+  }
+  .email-btn {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    width: 290px;
+  }
+  .subscribe-btn {
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    width: 140px;
+  }
+  .telegram-icon {
+    position: absolute;
+    bottom: 85%;
+    left: 130%;
+    width: 70px;
+  }
+  .fpara {
+    position: absolute;
+    top: 700%;
+    left: 20px;
+    width: 200px;
+  }
+  .company {
+    position: absolute;
+    top: 670%;
+    left: 30%;
+  }
+  .fcontent {
+    display: flex;
+    gap: 5px;
+    position: relative;
+    right: 10%;
+  }
+  h6 {
+    position: relative;
+    bottom: 30px;
+    font-size: 30px;
+  }
+  ol {
+    list-style: none;
+  }
+  li {
+    font-size: 16px;
+  }
+  .heading {
+    position: relative;
+    top: 40px;
+    font-size: 18px;
+  }
+  .apps {
+    font-size: 18px;
+    position: relative;
+    left: 93%;
+    bottom: 135px;
+  }
+  .socialapp {
+    position: relative;
+    left: 96%;
+    bottom: 130px;
+  }
+  .app-icons {
+    position: relative;
+    bottom: 65vh;
+    left: 75%;
+  }
+  .copyright {
+    position: relative;
+    bottom: 160px;
+    left: 20%;
+  }
+  .content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    bottom: 1200px;
+  }
+  .content-section .card4 {
+    margin: 10px -30px 0px -30px;
+  }
+  .content-section .card img {
+    width: 70px;
+    margin-left: 0px;
+  }
+  .head {
+    margin: 15px 0px;
+    font-size: 25px;
+    position: relative;
+    bottom: 330px;
+  }
+  .subpara {
+    font-size: 15px;
+    width: 250px;
+    left: 90px;
+    position: relative;
+    bottom: 320px;
+  }
+  .container-img {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    bottom: 330vh;
+  }
+  .white-icons {
+    position: absolute;
+    top: 40px;
+  }
+  .star {
+    position: absolute;
+    right: 265px;
+  }
+  .thumb {
+    position: absolute;
+    left: 265px;
+  }
 }
-h2{
-
-}
-} */
-
